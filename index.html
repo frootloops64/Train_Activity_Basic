@@ -25,7 +25,7 @@
             <div class="card-header">
                 Current Train Schedule
             </div>
-            <div class="card-body" id="employeeTable">
+            <div class="card-body" id="trainTimeTable">
                 <table class="col-md-12">
                     <thead>
                         <tr>
@@ -47,22 +47,22 @@
                 Add Train
             </div>
             <div class="card-body">
-                <form id="newEmployee">
+                <form id="newTrain">
                     <div class="form-group">
-                        <label for="employeeName">Train Name</label>
-                        <input type="name" class="form-control" id="employeeName" placeholder="Name">
+                        <label for="trainName">Train Name</label>
+                        <input type="name" class="form-control" id="trainName" placeholder="Train Name">
                     </div>
                     <div class="form-group">
-                        <label for="employeeRole">Destination</label>
-                        <input type="email" class="form-control" id="employeeRole" placeholder="Role">
+                        <label for="trainDestination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Destination">
                     </div>
                     <div class="form-group">
-                        <label for="employeeStartDate">First Train Time (HH:mm - military time)</label>
-                        <input type="email" class="form-control" id="employeeStartDate" placeholder="MM/DD/YYYY">
+                        <label for="firstTime">First Train Time (HH:mm - military time)</label>
+                        <input type="time" class="form-control" id="firstTrain" placeholder="--:--">
                     </div>
                     <div class="form-group">
-                        <label for="employeeRate">Frequency (min.)</label>
-                        <input type="email" class="form-control" id="employeeRate" placeholder="Rate">
+                        <label for="frequency">Frequency (min.)</label>
+                        <input type="number" class="form-control" id="frequency" placeholder="minutes">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
